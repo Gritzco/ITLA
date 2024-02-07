@@ -1,0 +1,52 @@
+print("Hola, por favor pruebe mi programa")
+
+# Solicitar al usuario que ingrese dos números
+num1 = float(input("Ingrese el primer número: "))
+num2 = float(input("Ingrese el segundo número: "))
+Times = num1*num2
+print(".")
+print(f"Su resultado es: {Times}")
+print(".")
+#Ingreso de datos edad ciudad y nombre
+nombre = input("ingrese su nombre:")
+edad = int(input('ingrese su edad:'))
+ciudad = input("ingrese su ciudad:")
+print(".")
+if edad > 18 and edad < 65:
+    print("Usted es mayor de edad")
+elif edad >= 65: 
+    print("Usted esta viejo")
+else:
+    print("Usted es menor de edad")
+print(".")
+if ciudad != "Distrito Nacional":
+    print("Usted vive pila de lejos, no pida UBER que le sale caro, use el METRO")
+else:
+    print("Puedes pedir UBER")
+print(".")
+#         concatenar con f para que todo lo que este definido en las variables salga como texto solo se pone 
+#                             "" al inicio y al final para las variables colcocar {}
+Cadena = f"Mi nombre es {nombre} soy de {ciudad} y tengo {edad} años"
+print(Cadena)
+print(".")
+print(".")
+print(".")
+print(".")
+
+# Solicitar al usuario que elija un nombre, esto esta hecho para nombres de mujeres 
+sexo = input(print("M/F:"))  #no se porque me imprime NONE?
+if sexo == "F":
+    Lista = input("Seleccione un número (1/2/3/4): ")
+    print(".")
+    print(".")
+    # Cambio de nombre dependiendo del numero que escoja
+    if Lista == '1':
+        print("Usted a cambiado su nombre a Petronila")
+    elif Lista == '2':
+        print("Usted a cambiado su nombre a Agapita")
+    elif Lista == '3':
+        print("Usted a cambiado su nombre a Uxia")
+    elif Lista == '4':
+        print("Usted a cambiado su nombre a Ermenegilda")
+elif sexo == "M":
+    print("no tenemos nombres para hombres ")
